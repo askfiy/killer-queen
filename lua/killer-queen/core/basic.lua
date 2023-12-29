@@ -140,12 +140,14 @@ function M.get_highlight(colors, config)
             link = "Search",
         },
         Cursor = {
-            fg = "bg",
-            bg = "fg",
+            -- fg = "bg",
+            -- bg = "fg",
+            reverse = true
         },
         lCursor = {
-            fg = "bg",
-            bg = "fg",
+            -- fg = "bg",
+            -- bg = "fg",
+            reverse = true
         },
         CursorIM = {
             link = "Cursor",
@@ -224,8 +226,10 @@ function M.get_highlight(colors, config)
             link = "CursorLineNr",
         },
         MatchParen = {
-            fg = "bg",
-            bg = "fg",
+            -- fg = "bg",
+            -- bg = "fg",
+            -- bold = true,
+            reverse = true,
             bold = true,
         },
         ModeMsg = {
@@ -296,7 +300,8 @@ function M.get_highlight(colors, config)
             bold = true,
         },
         Search = {
-            fg = "bg",
+            -- fg = "bg",
+            fg = colors.base00,
             bg = colors.base06,
         },
         SpecialKey = {
