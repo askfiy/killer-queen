@@ -1,0 +1,1 @@
+require("killer-queen").enter()

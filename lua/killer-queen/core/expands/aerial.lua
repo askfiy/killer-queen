@@ -1,0 +1,67 @@
+local M = {}
+
+---@diagnostic disable-next-line: unused-local
+function M.get_highlight(colors, config)
+    return {
+        AerialLine = { link = "CursorLine" },
+        AerialLineNC = { link = "CursorLine" },
+
+        AerialGuide = { fg = colors.base06 },
+        AerialArray = { fg = colors.base07 },
+
+        AerialBoolean = { link = "AerialArray" },
+        AerialClass = { link = "AerialArray" },
+        AerialConstant = { link = "AerialArray" },
+        AerialConstructor = { link = "AerialArray" },
+        AerialEnum = { link = "AerialArray" },
+        AerialEnumMember = { link = "AerialArray" },
+        AerialEvent = { link = "AerialArray" },
+        AerialField = { link = "AerialArray" },
+        AerialFile = { link = "AerialArray" },
+        AerialFunction = { link = "AerialArray" },
+        AerialInterface = { link = "AerialArray" },
+        AerialKey = { link = "AerialArray" },
+        AerialMethod = { link = "AerialArray" },
+        AerialModule = { link = "AerialArray" },
+        AerialNamespace = { link = "AerialArray" },
+        AerialNull = { link = "AerialArray" },
+        AerialNumber = { link = "AerialArray" },
+        AerialObject = { link = "AerialArray" },
+        AerialOperator = { link = "AerialArray" },
+        AerialPackage = { link = "AerialArray" },
+        AerialProperty = { link = "AerialArray" },
+        AerialString = { link = "AerialArray" },
+        AerialStruct = { link = "AerialArray" },
+        AerialTypeParameter = { link = "AerialArray" },
+        AerialVariable = { link = "AerialArray" },
+
+        AerialArrayIcon = { link = "AerialGuide" },
+        AerialBooleanIcon = { link = "AerialGuide" },
+        AerialClassIcon = { link = "AerialGuide" },
+        AerialConstantIcon = { link = "AerialGuide" },
+        AerialConstructorIcon = { link = "AerialGuide" },
+        AerialEnumIcon = { link = "AerialGuide" },
+        AerialEnumMemberIcon = { link = "AerialGuide" },
+        AerialEventIcon = { link = "AerialGuide" },
+        AerialFieldIcon = { link = "AerialGuide" },
+        AerialFileIcon = { link = "AerialGuide" },
+        AerialFunctionIcon = { link = "AerialGuide" },
+        AerialInterfaceIcon = { link = "AerialGuide" },
+        AerialKeyIcon = { link = "AerialGuide" },
+        AerialMethodIcon = { link = "AerialGuide" },
+        AerialModuleIcon = { link = "AerialGuide" },
+        AerialNamespaceIcon = { link = "AerialGuide" },
+        AerialNullIcon = { link = "AerialGuide" },
+        AerialNumberIcon = { link = "AerialGuide" },
+        AerialObjectIcon = { link = "AerialGuide" },
+        AerialOperatorIcon = { link = "AerialGuide" },
+        AerialPackageIcon = { link = "AerialGuide" },
+        AerialPropertyIcon = { link = "AerialGuide" },
+        AerialStringIcon = { link = "AerialGuide" },
+        AerialStructIcon = { link = "AerialGuide" },
+        AerialTypeParameterIcon = { link = "AerialGuide" },
+        AerialVariableIcon = { link = "AerialGuide" },
+    }
+end
+
+return M
