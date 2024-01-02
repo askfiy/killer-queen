@@ -2,13 +2,13 @@ local colors_scheme = "killer-queen"
 
 local function reload()
     for k, _ in pairs(package.loaded) do
-        if k:match(colors_scheme) then
+        if k:match(colors_scheme:gsub("-", "%%-")) then
             package.loaded[k] = nil
         end
     end
-
     require(colors_scheme).setup()
     vim.cmd(("colorscheme %s"):format(colors_scheme))
+    vim.notify("reload completed")
 end
 
 vim.keymap.set(

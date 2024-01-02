@@ -131,7 +131,6 @@ end
 function M.get_highlight(colors, config)
     initial_terminal_colors(colors, config)
     return vim.tbl_extend("force", {
-
         -- Use DarkColor
         Conceal = {
             fg = colors.base08,
@@ -140,14 +139,10 @@ function M.get_highlight(colors, config)
             link = "Search",
         },
         Cursor = {
-            -- fg = "bg",
-            -- bg = "fg",
-            reverse = true
+            reverse = true,
         },
         lCursor = {
-            -- fg = "bg",
-            -- bg = "fg",
-            reverse = true
+            link = "Cursor",
         },
         CursorIM = {
             link = "Cursor",
@@ -156,12 +151,11 @@ function M.get_highlight(colors, config)
             link = "CursorLine",
         },
         CursorLine = {
-            bg = colors.color02,
+            bg = colors.cursor_line,
         },
         Directory = {
             fg = colors.base06,
-            bg = colors.color01,
-            bold = true,
+            bg = colors.color00,
         },
         DiffAdd = {
             fg = colors.base07,
@@ -169,7 +163,7 @@ function M.get_highlight(colors, config)
         },
         DiffChange = {
             fg = colors.base07,
-            bg = colors.color04,
+            bg = colors.color03,
         },
         DiffDelete = {
             fg = colors.base01,
@@ -183,7 +177,7 @@ function M.get_highlight(colors, config)
             link = "NonText",
         },
         TermCursor = {
-            reverse = true,
+            link = "Cursor",
         },
         TermCursorNC = {},
         ErrorMsg = {
@@ -226,10 +220,7 @@ function M.get_highlight(colors, config)
             link = "CursorLineNr",
         },
         MatchParen = {
-            -- fg = "bg",
-            -- bg = "fg",
-            -- bold = true,
-            reverse = true,
+            background = colors.base06,
             bold = true,
         },
         ModeMsg = {
@@ -253,11 +244,11 @@ function M.get_highlight(colors, config)
         },
         NormalFloat = {
             fg = colors.base07,
-            bg = colors.base00,
+            bg = config.is_border and colors.base00 or colors.color01,
         },
         FloatBorder = {
             fg = colors.base08,
-            bg = colors.base00,
+            bg = config.is_border and colors.base00 or colors.color01,
         },
         FloatTitle = {
             link = "Title",
@@ -272,7 +263,7 @@ function M.get_highlight(colors, config)
             bg = colors.color01,
         },
         PmenuSel = {
-            fg = colors.color01,
+            fg = colors.base00,
             bg = colors.base06,
         },
         PmenuKind = {
@@ -288,10 +279,10 @@ function M.get_highlight(colors, config)
             link = "PmenuSel",
         },
         PmenuSbar = {
-            bg = colors.color02,
+            bg = colors.color03,
         },
         PmenuThumb = {
-            bg = colors.color03,
+            bg = colors.color02,
         },
         Question = {
             fg = colors.base06,
@@ -300,7 +291,6 @@ function M.get_highlight(colors, config)
             bold = true,
         },
         Search = {
-            -- fg = "bg",
             fg = colors.base00,
             bg = colors.base06,
         },
@@ -324,13 +314,13 @@ function M.get_highlight(colors, config)
             sp = colors.base06,
         },
         StatusLine = {
-            fg = colors.color01,
+            fg = colors.base00,
             bg = colors.base06,
             bold = true,
         },
         StatusLineNC = {
             fg = colors.base07,
-            bg = colors.color02,
+            bg = colors.color00,
         },
         TabLine = {
             fg = colors.base08,
@@ -347,7 +337,7 @@ function M.get_highlight(colors, config)
             fg = colors.base06,
         },
         Visual = {
-            bg = colors.color03,
+            bg = colors.visual_mode,
         },
         VisualNOS = {
             link = "Visual",

@@ -18,8 +18,15 @@ function M.get_highlight(colors, config)
 
     return vim.tbl_extend("force", {
         Normal = { fg = colors.base07 },
-        NormalFloat = { fg = colors.base07 },
         Directory = { fg = colors.base06, bold = true },
+        NormalFloat = {
+            fg = colors.base07,
+            bg = config.is_border and "NONE" or colors.color01,
+        },
+        FloatBorder = {
+            fg = colors.base08,
+            bg = config.is_border and "NONE" or colors.color01,
+        },
     }, hl_group)
 end
 

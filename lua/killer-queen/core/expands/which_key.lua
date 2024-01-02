@@ -7,7 +7,7 @@ function M.get_highlight(colors, config)
         WhichKeyGroup = { fg = colors.base12, bold = true },
         WhichKeySeparator = { fg = colors.base11 },
         WhichKeyDesc = { fg = colors.base14 },
-        WhichKeyFloat = { bg = colors.color02 },
+        WhichKeyFloat = { bg = colors.color01 },
     }
 end
 

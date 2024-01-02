@@ -3,7 +3,7 @@ local M = {}
 ---@diagnostic disable-next-line: unused-local
 function M.get_highlight(colors, config)
     return {
-        NvimTreeNormal = { bg = colors.color01 },
+        NvimTreeNormal = { bg = colors.color00 },
         NvimTreeWinSeparator = { fg = colors.base00, bg = colors.base00 },
         NvimTreeWindowPicker = { fg = colors.base07, bg = colors.base04 },
         NvimTreeFolderName = { fg = colors.base07 },

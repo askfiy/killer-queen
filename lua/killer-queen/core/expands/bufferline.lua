@@ -108,18 +108,18 @@ function M.get_highlight(colors, config)
         },
 
         BufferLineTabSeparatorSelected = {
-            fg = colors.color01,
+            fg = colors.color02,
             bg = colors.color02,
         },
 
         BufferLineTabSeparator = {
-            fg = colors.color01,
+            fg = colors.color02,
             bg = colors.color02,
         },
 
         BufferLineTabClose = {
             fg = colors.base01,
-            bg = colors.color01,
+            bg = colors.color02,
             bold = true,
         },
 

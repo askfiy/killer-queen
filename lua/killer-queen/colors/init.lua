@@ -1,9 +1,13 @@
 local colors = {
-    -- Gradient
-    color01 = "#1E1D28",
+    -- Basic Color
+    cursor_line = "#2E3439",
+    visual_mode = "#186C60",
+
+    color00 = "#1E1D28",
+    color01 = "#232629",
     color02 = "#2C2E33",
-    color03 = "#393E46",
-    color04 = "#414244",
+    color03 = "#414244",
+
     -- Base16
     -- Dark
     base00 = "#1E2229", -- black
