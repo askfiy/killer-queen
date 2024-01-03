@@ -22,7 +22,8 @@ function M.get_highlight(colors, config)
             bg = colors.color02,
         },
         BufferLineIndicatorSelected = {
-            fg = colors.base08,
+            -- Logo color
+            fg = colors.base06,
             bg = colors.base00,
         },
         BufferLineIndicator = {
