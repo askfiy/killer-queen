@@ -5,7 +5,7 @@ local normal_component = {
     b = { fg = colors.base12, bg = colors.color02 },
     c = { fg = colors.base07, bg = colors.color00 },
 
-    x = { fg = colors.base12, bg = colors.color00 },
+    x = { fg = colors.base07, bg = colors.color00 },
     y = { fg = colors.base14, bg = colors.color03 },
     z = { fg = colors.base00, bg = colors.base06 },
 }
