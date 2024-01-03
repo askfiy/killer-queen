@@ -156,6 +156,7 @@ function M.get_highlight(colors, config)
         Directory = {
             fg = colors.base06,
             bg = colors.color00,
+            bold = true,
         },
         DiffAdd = {
             fg = colors.base07,
