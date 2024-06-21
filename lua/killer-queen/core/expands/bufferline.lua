@@ -317,6 +317,7 @@ M.filetype_icons = {
     "Sln",
     "Favicon",
     "Js",
+    "testJs",
     "Tcl",
     "Styl",
     "Ejs",
