@@ -274,6 +274,7 @@ function M.get_file_icons_highlights(colors, config)
 end
 
 M.filetype_icons = {
+    "http",
     "Pyd",
     "Yaml",
     "GitConfig",
