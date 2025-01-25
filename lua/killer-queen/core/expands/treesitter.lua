@@ -63,6 +63,7 @@ function M.get_highlight(colors, config)
 
         -- python
         ["@include.python"] = { fg = colors.base13 },
+        ["@module.python"] = { fg = colors.base13 },
 
         -- go
         ["@namespace.go"] = { fg = colors.base13 },
