@@ -124,6 +124,43 @@ local function syntax_highlight(colors, config)
             fg = colors.base12,
             bg = colors.color15,
         },
+
+        -- html
+        htmlTag = {
+            fg = colors.base12,
+        },
+        htmlTagN = {
+            link = "htmlTag",
+        },
+        htmlArg = {
+            link = "htmlTag",
+        },
+        htmlTagName = {
+            link = "htmlTag",
+        },
+
+        -- css
+        cssClassName = {
+            fg = colors.base09,
+        },
+        cssIdentifier = {
+            link = "cssClassName",
+        },
+        cssTextProp = {
+            fg = colors.base13,
+        },
+        cssBackgroundProp = {
+            link = "cssTextProp",
+        },
+        cssBorderProp = {
+            link = "cssTextProp",
+        },
+        cssMediaProp = {
+            link = "cssTextProp",
+        },
+        cssFontProp = {
+            link = "cssTextProp",
+        },
     }
 end
 
