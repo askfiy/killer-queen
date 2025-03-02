@@ -7,6 +7,7 @@ local default_config = {
     -- Whether to apply the adapted plugin
     expands = {
         lazy = true,
+        dbui = true,
         aerial = true,
         nvim_cmp = true,
         gitsigns = true,
